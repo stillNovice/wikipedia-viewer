@@ -1,0 +1,63 @@
+body {
+  margin-top: 50px;
+  background: url('http://www.widewallpapershd.info/file/1338/728x544/16:9/puzzle-silver-globe_1660297167.jpg') fixed no-repeat;
+  background-size: cover;
+}
+
+.material-icons.md-96 { 
+  font-size: 96px;
+}
+
+.material-icons.orange { 
+  color: orange;
+}
+
+.round-border {
+  border-radius: 50px;
+}
+
+.randomArticleBtn {
+  top: 50%;
+}
+
+.actualSearch {
+  display: none;
+}
+
+input[type="text"] {
+  background: inherit;
+  box-shadow: 3px 3px 3px 3px darkslategray;
+  font-weight: bold;
+  font-style: italic;
+}
+
+input[type="text"]:focus {
+  background: #CBCBCF;
+  box-shadow: 3px 3px 3px 3px darkslategray;
+  padding-right: 40px;
+}
+
+input[type="text"]::placeholder {
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+}
+
+input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+.inputClearIcon {
+  top: 13px;
+  right: 14px;
+  position: absolute;
+  color: black;
+}
+
+button {
+  box-shadow: 3px 3px 3px 3px darkslategray;
+}
+
+h1 {
+  text-shadow: 3px 3px aliceblue;
+}
