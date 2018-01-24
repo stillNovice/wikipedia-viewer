@@ -30,6 +30,7 @@
     rel="stylesheet">
 
   </head>
+
   <body>
     <div class="container">
       <div class="row justify-content-md-center">
@@ -41,17 +42,18 @@
               <a href="#" onclick="showHideStuff(); return false;"><i class="material-icons orange md-96">search</i></a>
           </div>
           <div class="actualSearch">
-            <div class="btn-group d-inline-block" style="width: 82%; margin: inherit;">
+            <div class="btn-group d-inline-block searchInputDiv">
                 <input class="form-control form-control-lg round-border searchText" type="text" placeholder="Search Article...">
-                <a href="#" onclick="$('.searchText').val(''); return false;" class="inputClearIcon"><i class="material-icons">close</i></a>  
+                <a href="#" onclick="$('.searchText').val(''); $('.searchText').focus(); return false;" class="inputClearIcon"><i class="material-icons">close</i></a>  
             </div>
-            <div class="d-inline-block float-right" style="margin: inherit;">
+            <div class="d-inline-block float-right searchBtnDiv">
                 <button type="submit" class="btn btn-outline-dark btn-lg round-border searchBtn">Search!</button>
             </div>
           </div>
           <br>
           <div class="form-group text-center randomArticleDiv" style="margin: 10px;">
-              <button type="submit" class="btn btn-primary btn-lg round-border randomArticleBtn">Random Article</button>
+              <button type="submit" class="btn btn-primary btn-lg round-border randomArticleBtn" 
+                      onclick="window.open('https://en.wikipedia.org/wiki/Special:Random'); return false;">Random Article</button>
           </div>
         </div>
       </div>
@@ -59,9 +61,12 @@
 
     <br>
     <br>
+
+    <!-- Search Results Section starts -->
     <div class="container" id="searchResultDiv">
-      
+
     </div>
+    <!-- Search Results Section ends -->
 
   </body>
 

@@ -61,3 +61,32 @@ button {
 h1 {
   text-shadow: 3px 3px aliceblue;
 }
+
+.logoOnCard {
+  height: 100%;
+  width: 100%;
+}
+
+.searchInputDiv {
+  width: 82%;
+  margin: inherit;
+}
+
+.searchBtnDiv {
+  margin: inherit;
+  width: 15%;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    width: 100%;
+  }
+
+  .searchInputDiv {
+    width: 70%;
+  }
+
+  .searchBtnDiv {
+    width: 25%;
+  }
+}
